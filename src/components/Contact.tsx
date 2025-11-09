@@ -1,0 +1,161 @@
+import { motion } from 'motion/react';
+import { useForm } from 'react-hook-form';
+import { fadeUp } from '../lib/animations';
+import SectionHeader from './SectionHeader';
+import { Form, FormControl, FormField, FormItem, FormMessage, FormLabel } from './ui/form';
+import { Input } from './ui/input';
+import { Textarea } from './ui/textarea';
+import { Button } from './ui/button';
+
+// Icons
+import { User, Building2, Mail, Phone, MessageSquare, SendIcon } from "lucide-react";
+
+type ContactFormValues = {
+  name: string;
+  email: string;
+  company: string;
+  phone: string;
+  message: string;
+};
+
+const Contact = () => {
+  const form = useForm<ContactFormValues>({
+    defaultValues: {
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      message: '',
+    },
+  });
+
+  const onSubmit = (values: ContactFormValues) => {
+    console.log(values);
+  };
+
+  return (
+    <motion.section
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: false, amount: 0.2 }}
+      variants={fadeUp}
+      className='mt-30 scroll-mt-10'
+      id='contact'
+    >
+      <SectionHeader
+        subtitle='Contact'
+        title={`Let's make something awesome together !`}
+      />
+
+      <Form {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className='w-full mx-auto space-y-5 mt-10 rounded-md'
+        >
+          <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
+
+            {/* Name */}
+            <FormField
+              control={form.control}
+              name='name'
+              render={({ field }) => (
+                <FormItem className='w-full'>
+                  <FormLabel>Name</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
+                      <Input className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='Your name' {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            {/* Company */}
+            <FormField
+              control={form.control}
+              name='company'
+              render={({ field }) => (
+                <FormItem className='w-full'>
+                  <FormLabel>Company</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
+                      <Input className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='Company name' {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            {/* Email */}
+            <FormField
+              control={form.control}
+              name='email'
+              render={({ field }) => (
+                <FormItem className='w-full'>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <Mail className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
+                      <Input type='email' className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='your@example.com' {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            {/* Phone */}
+            <FormField
+              control={form.control}
+              name='phone'
+              render={({ field }) => (
+                <FormItem className='w-full'>
+                  <FormLabel>Phone</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <Phone className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
+                      <Input type='tel' className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='+123456789' {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+
+          {/* Message */}
+          <FormField
+            control={form.control}
+            name='message'
+            render={({ field }) => (
+              <FormItem className='w-full'>
+                <FormLabel>Message</FormLabel>
+                <FormControl>
+                  <div className="relative">
+                    <MessageSquare className="absolute left-3 top-4 size-5 text-neutral-400" />
+                    <Textarea className='pl-10 border border-neutral-700 min-h-[120px] rounded-md bg-neutral-900 py-3' placeholder='Your message...' {...field} />
+                  </div>
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          {/* Submit */}
+          <div className='flex justify-end'>
+            <Button size='lg' className='mt-2 text-md'>
+              Send <SendIcon/>
+            </Button>
+          </div>
+
+        </form>
+      </Form>
+    </motion.section>
+  );
+};
+
+export default Contact;
