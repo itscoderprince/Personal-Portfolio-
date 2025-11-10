@@ -10,7 +10,7 @@ const Projects = () => {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 0.3 }}
-      variants={staggerContainer(0.6)}
+      variants={staggerContainer(0.4)}
       className='mt-30 scroll-mt-10'
       id='projects'
 >

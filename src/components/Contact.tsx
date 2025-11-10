@@ -8,7 +8,7 @@ import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 
 // Icons
-import { User, Building2, Mail, Phone, MessageSquare, SendIcon } from "lucide-react";
+import { User, Building2, Mail, Phone, MessageSquare, MailIcon } from "lucide-react";
 
 type ContactFormValues = {
   name: string;
@@ -148,7 +148,7 @@ const Contact = () => {
           {/* Submit */}
           <div className='flex justify-end'>
             <Button size='lg' className='mt-2 text-md'>
-              Send <SendIcon/>
+              Send <MailIcon/>
             </Button>
           </div>
 

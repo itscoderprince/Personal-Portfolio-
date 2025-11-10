@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { fadeUp } from '../lib/animations';
 import type { ProjectType } from '../types';
 
-const ProjectCard = ({ imgSrc, projectLink, tags, title }:ProjectType) => {
+const ProjectCard = ({ imgSrc, projectLink, tags, title }: ProjectType) => {
   return (
     <>
       <motion.div
@@ -11,6 +11,7 @@ const ProjectCard = ({ imgSrc, projectLink, tags, title }:ProjectType) => {
       >
         <figure className='overflow-hidden rounded-md'>
           <img
+            loading='lazy'
             src={imgSrc}
             alt={title}
             className='rounded-md transition duration-500 hover:scale-115 w-full'

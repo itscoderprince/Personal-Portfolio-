@@ -8,8 +8,8 @@ const Stats = () => {
     <motion.section
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: false, amount: 0.2 }}
-      variants={staggerContainer(0.6)}
+      viewport={{ once: false, amount: 0.3 }}
+      variants={staggerContainer(0.2)}
       className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20'
       id='stats'
     >

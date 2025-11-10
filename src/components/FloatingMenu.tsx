@@ -9,7 +9,7 @@ const FloatingMenu = () => {
     <>
       {/* DESKTOP TOP MENU */}
       <div className="hidden lg:block fixed top-6 left-104 w-[70%] z-50 transition-all duration-300">
-        <nav className="bg-white/10 backdrop-blur-sm border border-neutral-700 px-6 py-3 flex items-center justify-between shadow-sm rounded-full">
+        <nav className="bg-white/10 backdrop-blur-sm border border-neutral-700 sm:px-6 py-3 flex items-center justify-between shadow-sm rounded-full">
           {navLinks.map((link) => {
             const Icon = link.icon;
 

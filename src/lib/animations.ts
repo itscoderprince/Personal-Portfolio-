@@ -1,23 +1,24 @@
-/**
- * @copyright 2025 codewithsadee
- * @license Apache-2.0
- */
-
-import type { Variants } from 'framer-motion';
-
-// Container variant for staggering children
-export const staggerContainer = (delay = 0): Variants => ({
+export const staggerContainer = (delay = 0) => ({
   hidden: {},
   visible: {
     transition: {
-      delayChildren: delay, // 👈 add per-section control
-      staggerChildren: 0.4,
+      delayChildren: delay,
+      staggerChildren: 0.18, // lower = faster snap
     },
   },
 });
 
-// Child item fade-up animation
-export const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+export const fadeUp = {
+  hidden: {
+    opacity: 0,
+    transform: "translateY(14px) scale(0.97)",
+  },
+  visible: {
+    opacity: 1,
+    transform: "translateY(0px) scale(1)",
+    transition: {
+      duration: 0.45,
+      easing: "cubic-bezier(0.25, 0.8, 0.35, 1)",
+    },
+  },
 };

@@ -13,24 +13,23 @@ const Profile = () => {
       <div className='flex flex-col items-center gap-4 sm:gap-3'>
         <motion.img
           src='/avatar2.png'
-          alt=''
+          alt='Er Prince MERN Stack Developer'
           className='w-83 rounded-full mx-auto lg:w-96 p-1.5 object-cover'
-          // initial={{ opacity: 0, y: 20 }}
-          // animate={{
-          //   opacity: 1,
-          //   y: [0, -8, 0, 8, 0],
-          // }}
-          // transition={{
-          //   duration: 6,
-          //   repeat: Infinity,
-          //   ease: 'easeInOut',
-          // }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: 1,
+            y: [0, -8, 0, 8, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
         />
         <h1 className='text-4xl font-rubik uppercase  text-center font-bold'>
           Er. Prince <br /> sharma
         </h1>
 
-        {/* <h2 className='font-rubik'>Full-Stack Delveloper</h2> */}
         <div className='flex gap-3 pt-2 items-center justify-around'>
           {socialLinks.map((link) => {
             const Icon = link.icon;
@@ -45,7 +44,7 @@ const Profile = () => {
             );
           })}
         </div>
-        <p className='align-super text-center px-8'>
+        <p className='align-super text-center py-1 px-8'>
           With a passion for developing modern React web apps for commercial
           businesses.
         </p>

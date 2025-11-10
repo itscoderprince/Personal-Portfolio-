@@ -10,7 +10,7 @@ const About = () => {
       initial='hidden'
       whileInView='visible'
       viewport={{ once: false, amount: 0.2 }}
-      variants={staggerContainer(0)}
+      variants={staggerContainer(0.4)}
       className='mt-30 scroll-mt-10'
       id='about'
     >
