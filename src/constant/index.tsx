@@ -42,7 +42,7 @@ import {
  * Navigation Links
  */
 const navLinks: LinksType[] = [
-  { label: 'Home', link: '#hero', icon: Home },
+  { label: 'Home', link: '#/', icon: Home },
   { label: 'Projects', link: '#projects', icon: Briefcase },
   { label: 'About', link: '#about', icon: User },
   // { label: 'Services', link: '#services', icon: Settings },
