@@ -58,7 +58,7 @@ const socialLinks: LinksType[] = [
   { icon: Instagram, label: 'Instagram', link: '/#' },
   { icon: X, label: 'Twitter', link: '/#' },
   { icon: Linkedin, label: 'Linkedin', link: '/#' },
-  { icon: Github, label: 'Youtube', link: '/#' },
+  { icon: Github, label: 'Youtube', link: 'https://github.com/' },
 ];
 
 /**
@@ -187,9 +187,9 @@ const services: ServiceType[] = [
  * Stats
  */
 const statsData: StatsType[] = [
-  { number: 25, label: 'Projects' },
-  { number: 15, label: 'Clients' },
-  { number: 3, label: 'Years Experience' },
+  { number: "25", label: 'Projects' },
+  { number: "15", label: 'Clients' },
+  { number: "3", label: 'Years Experience' },
 ];
 
 /**

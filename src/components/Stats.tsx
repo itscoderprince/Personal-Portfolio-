@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { fadeUp, staggerContainer } from '../lib/animations';
-import { statsData } from '../constant';
 import AnimatedCounter from './AnimatedCounter';
+import { statsData } from '../constant';
 
 const Stats = () => {
   return (

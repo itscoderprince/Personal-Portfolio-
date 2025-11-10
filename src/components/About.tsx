@@ -19,17 +19,16 @@ const About = () => {
         title='Transforming ideas into clean and impactful web experiences'
       />
 
-<motion.p
-  variants={fadeUp}
-  className='mt-3 text-neutral-300 leading-relaxed justify-smart'
->
-  I am a MERN Stack Developer who enjoys turning complex problems into
-  simple, elegant solutions. I build fast, responsive, and user-centered
-  applications using MongoDB, Express, React, and Node.js. My approach
-  focuses on clean code, reusability, and meaningful UI design that
-  creates a smooth and enjoyable experience for users.
-</motion.p>
-
+      <motion.p
+        variants={fadeUp}
+        className='mt-3 text-neutral-300 leading-relaxed justify-smart'
+      >
+        I am a MERN Stack Developer who enjoys turning complex problems into
+        simple, elegant solutions. I build fast, responsive, and user-centered
+        applications using MongoDB, Express, React, and Node.js. My approach
+        focuses on clean code, reusability, and meaningful UI design that
+        creates a smooth and enjoyable experience for users.
+      </motion.p>
 
       <motion.div
         variants={fadeUp}
@@ -38,9 +37,11 @@ const About = () => {
       >
         <Button
           size='lg'
-          className='text-md'
+          className='rounded-4xl'
+          variant='softblue'
         >
-          Contact me<MailIcon />
+          Contact me
+          <MailIcon />
         </Button>
       </motion.div>
     </motion.section>
