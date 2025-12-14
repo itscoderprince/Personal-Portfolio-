@@ -1,8 +1,10 @@
+'use client';
+
 import { motion } from 'motion/react';
-import { fadeUp, staggerContainer } from '../lib/animations';
+import { fadeUp, staggerContainer } from '@/lib/animation';
 import SectionHeader from './SectionHeader';
-import { Button } from './ui/button';
-import { MailIcon } from 'lucide-react';
+import PrimaryButton from './ui/primary-button';
+import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
@@ -21,7 +23,7 @@ const About = () => {
 
       <motion.p
         variants={fadeUp}
-        className='mt-3 text-neutral-300 leading-relaxed justify-smart'
+        className='mt-3 text-neutral-600 dark:text-neutral-300 leading-relaxed justify-smart'
       >
         I am a MERN Stack Developer who enjoys turning complex problems into
         simple, elegant solutions. I build fast, responsive, and user-centered
@@ -35,14 +37,9 @@ const About = () => {
         transition={{ delay: 0.2 }}
         className='mt-6'
       >
-        <Button
-          size='lg'
-          className='rounded-4xl'
-          variant='softblue'
-        >
-          Contact me
-          <MailIcon />
-        </Button>
+        <PrimaryButton href='#contact' className='flex w-fit items-center gap-2 h-11 px-6 text-base'>
+          Contact <ArrowRight size={18} />
+        </PrimaryButton>
       </motion.div>
     </motion.section>
   );

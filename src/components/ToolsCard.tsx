@@ -1,14 +1,16 @@
+'use client';
+
 import { motion } from "motion/react"
-import type { ToolsType } from "../types"
+import type { ToolsType } from "@/type/index"
 
 
-const ToolsCard = ({tool}:{tool:ToolsType}) => {
+const ToolsCard = ({ tool }: { tool: ToolsType }) => {
   return (
     <motion.div
-    className="border border-neutral-700 rounded-md flex justify-center items-center flex-col py-4"
+      className="border border-neutral-700 rounded-md flex justify-center items-center flex-col py-4"
     >
-<img src={tool.imgSrc} alt={tool.label} />
-<p className="font-bold mt-2">{tool.label}</p>
+      <img src={tool.imgSrc} alt={tool.label} />
+      <p className="font-bold mt-2">{tool.label}</p>
     </motion.div>
   )
 }

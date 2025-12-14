@@ -2,7 +2,7 @@ import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "../../lib/utils"
+import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
@@ -21,8 +21,9 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
 
         // ⭐ CUSTOM BUTTON VARIANT (YOUR BUTTON STYLE)
+        // Modified to handle Dark Mode: Blue in Light Mode, White/Standard in Dark Mode
         softblue:
-          "bg-[#0987f2] text-white rounded-[20px] shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_6px_12px_rgba(0,0,0,0.35)] active:scale-95 transition-all duration-200 ease-in-out",
+          "bg-[#0987f2] text-white rounded-md shadow-[0_2px_4px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] active:scale-95 transition-all duration-200 ease-in-out dark:bg-white dark:text-black dark:hover:bg-neutral-200",
       },
 
       size: {

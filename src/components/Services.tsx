@@ -1,5 +1,7 @@
+'use client';
+
 import { motion } from 'motion/react';
-import { fadeUp, staggerContainer } from '../lib/animations';
+import { fadeUp, staggerContainer } from '@/lib/animation';
 import SectionHeader from './SectionHeader';
 import { services } from '../constant';
 import ServiceCard from './ServiceCard';

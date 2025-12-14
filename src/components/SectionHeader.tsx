@@ -1,6 +1,8 @@
+'use client';
+
 import { motion } from 'motion/react';
-import { fadeUp } from '../lib/animations';
-import { SparkleIcon } from 'lucide-react';
+import { fadeUp } from '@/lib/animation';
+import SparkText from './SparkText';
 
 const SectionHeader = ({
   title,
@@ -11,12 +13,7 @@ const SectionHeader = ({
 }) => {
   return (
     <>
-      <motion.p
-        variants={fadeUp}
-        className='flex items-center justify-center py-1 gap-2 border border-neutral-600 rounded-sm w-32'
-      >
-        <SparkleIcon size={15} /> {subtitle}
-      </motion.p>
+      <SparkText text={subtitle} className="w-fit" />
       <motion.h2
         variants={fadeUp}
         className='text-3xl sm:text-4xl font-bold capitalize mt-2 md:max-w-3xl'

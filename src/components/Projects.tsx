@@ -1,5 +1,7 @@
+'use client';
+
 import { motion } from 'motion/react';
-import { staggerContainer } from '../lib/animations';
+import { staggerContainer } from '@/lib/animation';
 import SectionHeader from './SectionHeader';
 import { projectsData } from '../constant';
 import ProjectCard from './ProjectCard';
@@ -13,14 +15,14 @@ const Projects = () => {
       variants={staggerContainer(0.4)}
       className='mt-30 scroll-mt-10'
       id='projects'
->
+    >
       <SectionHeader
         subtitle='Projects'
         title='My Features'
       />
 
       <motion.div
-        className='grid md:grid-cols-2 gap-5 sm:gap-8 mt-10'
+        className='grid md:grid-cols-3 gap-5 sm:gap-8 mt-10'
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.3 }}

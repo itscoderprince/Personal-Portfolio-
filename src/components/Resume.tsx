@@ -1,9 +1,12 @@
+'use client';
+
 import { motion } from "motion/react";
-import { fadeUp, staggerContainer } from "../lib/animations";
+import { fadeUp, staggerContainer } from '@/lib/animation';
 import SectionHeader from "./SectionHeader";
 import ExpCard from "./ExpCard";
 import { education, experience, tools } from "../constant";
 import ToolsCard from "./ToolsCard";
+import { TracingList } from "./TracingList";
 
 const Resume = () => {
   return (
@@ -22,7 +25,7 @@ const Resume = () => {
 
       <motion.p
         variants={fadeUp}
-        className="mt-4 text-neutral-300 justify-smart"
+        className="mt-4 text-neutral-600 dark:text-neutral-300 justify-smart"
       >
         I am a MERN Stack Developer with a strong foundation in both academic learning
         and real-world project experience. I enjoy building clean, scalable, and
@@ -35,21 +38,21 @@ const Resume = () => {
         <motion.div variants={fadeUp} className="mb-16 md:mb-0">
           <h2 className="text-3xl font-semibold mb-8">Education</h2>
 
-          <div className="space-y-8 border-l border-neutral-700 pl-6">
+          <TracingList>
             {education.map((item, i) => (
               <ExpCard key={i} item={item} />
             ))}
-          </div>
+          </TracingList>
         </motion.div>
 
         <motion.div variants={fadeUp}>
           <h2 className="text-3xl font-semibold mb-8">Work Experience</h2>
 
-          <div className="space-y-8 border-l border-border pl-6">
+          <TracingList>
             {experience.map((item, i) => (
               <ExpCard key={i} item={item} />
             ))}
-          </div>
+          </TracingList>
         </motion.div>
       </div>
 

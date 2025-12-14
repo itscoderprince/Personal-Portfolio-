@@ -1,11 +1,13 @@
+'use client';
+
 import { motion } from 'motion/react';
 import { useForm } from 'react-hook-form';
-import { fadeUp } from '../lib/animations';
+import { fadeUp } from '@/lib/animation';
 import SectionHeader from './SectionHeader';
 import { Form, FormControl, FormField, FormItem, FormMessage, FormLabel } from './ui/form';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { Button } from './ui/button';
+import PrimaryButton from './ui/primary-button';
 
 // Icons
 import { User, Building2, Mail, Phone, MessageSquare, MailIcon } from "lucide-react";
@@ -30,7 +32,7 @@ const Contact = () => {
   });
 
   const onSubmit = (values: ContactFormValues) => {
-    console.log(values);
+    // Submit logic here
   };
 
   return (
@@ -64,7 +66,7 @@ const Contact = () => {
                   <FormControl>
                     <div className="relative">
                       <User className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
-                      <Input className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='Your name' {...field} />
+                      <Input className='pl-10 border border-neutral-200 dark:border-neutral-700 h-12 rounded-md bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-500' placeholder='Your name' {...field} />
                     </div>
                   </FormControl>
                   <FormMessage />
@@ -82,7 +84,7 @@ const Contact = () => {
                   <FormControl>
                     <div className="relative">
                       <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
-                      <Input className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='Company name' {...field} />
+                      <Input className='pl-10 border border-neutral-200 dark:border-neutral-700 h-12 rounded-md bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-500' placeholder='Company name' {...field} />
                     </div>
                   </FormControl>
                   <FormMessage />
@@ -100,7 +102,7 @@ const Contact = () => {
                   <FormControl>
                     <div className="relative">
                       <Mail className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
-                      <Input type='email' className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='your@example.com' {...field} />
+                      <Input type='email' className='pl-10 border border-neutral-200 dark:border-neutral-700 h-12 rounded-md bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-500' placeholder='your@example.com' {...field} />
                     </div>
                   </FormControl>
                   <FormMessage />
@@ -118,7 +120,7 @@ const Contact = () => {
                   <FormControl>
                     <div className="relative">
                       <Phone className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-400" />
-                      <Input type='tel' className='pl-10 border border-neutral-700 h-12 rounded-md bg-neutral-900' placeholder='+123456789' {...field} />
+                      <Input type='tel' className='pl-10 border border-neutral-200 dark:border-neutral-700 h-12 rounded-md bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-500' placeholder='+123456789' {...field} />
                     </div>
                   </FormControl>
                   <FormMessage />
@@ -137,7 +139,7 @@ const Contact = () => {
                 <FormControl>
                   <div className="relative">
                     <MessageSquare className="absolute left-3 top-4 size-5 text-neutral-400" />
-                    <Textarea className='pl-10 border border-neutral-700 min-h-[120px] rounded-md bg-neutral-900 py-3' placeholder='Your message...' {...field} />
+                    <Textarea className='pl-10 border border-neutral-200 dark:border-neutral-700 min-h-[120px] rounded-md bg-neutral-100 dark:bg-neutral-900 py-3 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-500' placeholder='Your message...' {...field} />
                   </div>
                 </FormControl>
                 <FormMessage />
@@ -147,9 +149,9 @@ const Contact = () => {
 
           {/* Submit */}
           <div className='flex justify-end'>
-            <Button size='lg' className='mt-2 text-md'>
-              Send <MailIcon/>
-            </Button>
+            <PrimaryButton type='submit' className='mt-2 flex items-center gap-2 h-11 px-6 text-base w-full sm:w-auto justify-center'>
+              Send <MailIcon size={18} />
+            </PrimaryButton>
           </div>
 
         </form>

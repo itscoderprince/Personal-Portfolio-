@@ -1,35 +1,57 @@
+'use client';
+
 import { motion } from 'motion/react';
-import { fadeUp } from '../lib/animations';
-import type { ProjectType } from '../types';
+import { fadeUp } from '@/lib/animation';
+import Image from 'next/image';
+import type { ProjectType } from '@/type/index';
+import { ArrowUpRight, Github } from 'lucide-react';
+import PrimaryButton from './ui/primary-button';
 
-const ProjectCard = ({ imgSrc, tags, title }: ProjectType) => {
+const ProjectCard = ({ imgSrc, tags, title, projectLink }: ProjectType) => {
   return (
-    <>
-      <motion.div
-        variants={fadeUp}
-        className='relative'
-      >
-        <figure className='overflow-hidden rounded-md'>
-          <img
-            loading='lazy'
-            src={imgSrc}
-            alt={title}
-            className='rounded-md transition duration-500 hover:scale-115 w-full'
-          />
-        </figure>
+    <motion.div
+      variants={fadeUp}
+      className='relative group rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm dark:shadow-none'
+    >
+      {/* Image Container */}
+      <figure className='relative overflow-hidden aspect-video'>
+        <Image
+          src={imgSrc}
+          alt={title}
+          fill
+          className='object-cover transition-transform duration-500 group-hover:scale-105'
+        />
 
-        <div className='absolute bottom-0 p-2 flex gap-2'>
+        {/* Overlay on Hover */}
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+          <PrimaryButton
+            href={projectLink}
+            target="_blank"
+            className="translate-y-4 group-hover:translate-y-0 text-sm px-4 py-2"
+          >
+            Live Preview <ArrowUpRight size={16} />
+          </PrimaryButton>
+        </div>
+      </figure>
+
+      {/* Content */}
+      <div className='p-2 pt-2'>
+        <div className="flex justify-between items-start mb-2">
+          <h3 className="font-semibold text-md text-neutral-900 dark:text-neutral-100 truncate">{title}</h3>
+        </div>
+
+        <div className='flex flex-wrap gap-2 mt-2'>
           {tags.map((tag, i) => (
             <span
-              className='bg-background hover:bg-primary hover:text-black py-1 px-2 rounded-sm text-sm cursor-pointer'
+              className='bg-neutral-800 text-neutral-300 px-2 py-1 rounded text-xs font-medium border border-neutral-700'
               key={i}
             >
               {tag}
             </span>
           ))}
         </div>
-      </motion.div>
-    </>
+      </div>
+    </motion.div>
   );
 };
 
