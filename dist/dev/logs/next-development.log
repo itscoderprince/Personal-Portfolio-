@@ -1,0 +1,15 @@
+[00:00:22.559] Server  LOG     
+[00:00:22.561] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:22.562] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:22.563] Server  LOG        	- include was updated to add 'dist/types/**/*.ts'
+[00:00:22.564] Server  LOG        	- include was updated to add 'dist/dev/types/**/*.ts'
+[00:00:22.565] Server  LOG     
+[00:00:25.067] Server  LOG      ✓ Ready in 16.7s
+[00:00:28.544] Server  LOG      ○ Compiling / ...
+[00:01:19.737] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:01:26.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:28.820] Browser WARN    Image with src "/images/Ngo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:28.820] Browser WARN    Image with src "/images/kanvei.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:28.820] Browser WARN    Image with src "/images/project-ph-3.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:28.820] Browser WARN    Image with src "/images/project-ph-4.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
