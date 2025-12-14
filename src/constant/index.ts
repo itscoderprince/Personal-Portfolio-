@@ -32,13 +32,10 @@ import {
     Linkedin,
     Mail,
     MessageCircle,
-    Palette,
     Rocket,
     // Settings,
     Smartphone,
     User,
-    X,
-    Youtube,
 } from 'lucide-react';
 
 /**
@@ -59,10 +56,9 @@ const navLinks: LinksType[] = [
  */
 const socialLinks: LinksType[] = [
     { icon: Instagram, label: 'Instagram', link: 'https://www.instagram.com/prince_sharma_4/' },
-    { icon: X, label: 'Twitter', link: 'https://x.com/Princek11770069?t=o1obmYb1xTH3119RNuqEIg&s=08' },
+    // { icon: X, label: 'Twitter', link: 'https://x.com/Princek11770069?t=o1obmYb1xTH3119RNuqEIg&s=08' },
     { icon: Linkedin, label: 'Linkedin', link: 'https://www.linkedin.com/in/prince-sharma-4/' },
     { icon: Github, label: 'Github', link: 'https://github.com/itscoderprince' },
-    { icon: Youtube, label: 'Youtube', link: 'https://youtube.com' },
 ];
 
 /**
@@ -171,7 +167,7 @@ const services: ServiceType[] = [
         title: 'Responsive UI/UX Implementation',
         desc: 'Translating designs into pixel-perfect, responsive front-end code using React and Tailwind CSS for exceptional user experiences across all devices.',
         projects: '21 Projects',
-        icon: Palette,
+        icon: Layers,
     },
     {
         title: 'Performance Optimization',
