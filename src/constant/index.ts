@@ -81,7 +81,7 @@ const projectsData: ProjectType[] = [
         imgSrc: '/images/Life-care.PNG',
         title: 'Life Care Health Website',
         tags: ['Health', 'Web Development', 'Healthcare'],
-        projectLink: 'https://musify-5al0.onrender.com/',
+        projectLink: 'https://life-care-ashen.vercel.app/',
     },
     {
         imgSrc: '/images/project-ph-3.jpeg',
