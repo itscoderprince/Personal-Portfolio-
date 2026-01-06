@@ -78,15 +78,27 @@ const projectsData: ProjectType[] = [
         projectLink: 'https://kanvei.in/',
     },
     {
+        imgSrc: '/images/Life-care.PNG',
+        title: 'Life Care Health Website',
+        tags: ['Health', 'Web Development', 'Healthcare'],
+        projectLink: 'https://musify-5al0.onrender.com/',
+    },
+    {
         imgSrc: '/images/project-ph-3.jpeg',
-        title: 'Full stack music app',
-        tags: ['API', 'Development'],
+        title: 'Full Stack Social App',
+        tags: ['Social', 'Web Development', 'Social Media'],
         projectLink: 'https://musify-5al0.onrender.com/',
     },
     {
         imgSrc: '/images/project-ph-4.jpeg',
         title: 'Full stack music app',
-        tags: ['API', 'Development'],
+        tags: ['Music', 'Web Development'],
+        projectLink: 'https://musify-5al0.onrender.com/',
+    },
+    {
+        imgSrc: '/images/project-ph-4.jpeg',
+        title: 'Full stack music app',
+        tags: ['Music', 'Web Development'],
         projectLink: 'https://musify-5al0.onrender.com/',
     },
 ];
