@@ -7,11 +7,12 @@ import type { ProjectType } from '@/type/index';
 import { ArrowUpRight, Github } from 'lucide-react';
 import PrimaryButton from './ui/primary-button';
 
-const ProjectCard = ({ imgSrc, tags, title, projectLink }: ProjectType) => {
+const ProjectCard = ({ imgSrc, tags, title, projectLink, description, features, onClick }: ProjectType & { onClick: () => void }) => {
   return (
     <motion.div
       variants={fadeUp}
-      className='relative group rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm dark:shadow-none'
+      className='relative group rounded-md overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 shadow-sm dark:shadow-none cursor-pointer'
+      onClick={onClick}
     >
       {/* Image Container */}
       <figure className='relative overflow-hidden aspect-video'>
@@ -23,14 +24,10 @@ const ProjectCard = ({ imgSrc, tags, title, projectLink }: ProjectType) => {
         />
 
         {/* Overlay on Hover */}
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
-          <PrimaryButton
-            href={projectLink}
-            target="_blank"
-            className="translate-y-4 group-hover:translate-y-0 text-sm px-4 py-2"
-          >
-            Live Preview <ArrowUpRight size={16} />
-          </PrimaryButton>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <p className="text-white text-sm font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            View Project Details
+          </p>
         </div>
       </figure>
 

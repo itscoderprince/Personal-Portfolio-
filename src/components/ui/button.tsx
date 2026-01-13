@@ -23,7 +23,7 @@ const buttonVariants = cva(
         // ⭐ CUSTOM BUTTON VARIANT (YOUR BUTTON STYLE)
         // Modified to handle Dark Mode: Blue in Light Mode, White/Standard in Dark Mode
         softblue:
-          "bg-[#0987f2] text-white rounded-md shadow-[0_2px_4px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] active:scale-95 transition-all duration-200 ease-in-out dark:bg-white dark:text-black dark:hover:bg-neutral-200",
+          "bg-[#0987f2] text-white rounded-md shadow-[0_2px_4px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] active:scale-95 transition-all duration-200 ease-in-out hover:bg-[#0987f2]/90 dark:bg-[#0987f2] dark:text-white dark:hover:bg-[#0987f2]/90",
       },
 
       size: {

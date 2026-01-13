@@ -36,9 +36,9 @@ export default function Main() {
                 <FloatingMenu />
                 <Hero />
                 <Stats />
+                <About />
                 <Services />
                 <Projects />
-                <About />
                 <Resume />
                 <Testimonials />
                 <Contact />

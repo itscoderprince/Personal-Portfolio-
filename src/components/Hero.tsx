@@ -43,9 +43,10 @@ const Hero = () => {
                         <LayoutTextFlip
                             text=""
                             words={[
-                                'Frontend Developer',
-                                'Backend Developer',
+                                'Front-end Engineer',
+                                'Backend Engineer',
                                 'Full-Stack Engineer',
+                                'Vibe Coding Engineer',
                                 'Problem Solver'
                             ]}
                         />
@@ -71,7 +72,7 @@ const Hero = () => {
                             View Projects
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </PrimaryButton>
-                        <Button className="h-11 px-6 text-base flex items-center gap-2 bg-transparent dark:bg-transparent text-neutral-900 dark:text-white border border-neutral-300 dark:border-neutral-700 shadow-none hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-black dark:hover:text-white">
+                        <Button className="h-11 px-6 text-base flex items-center gap-2 bg-transparent dark:bg-transparent text-neutral-900 dark:text-white border border-neutral-300 dark:border-neutral-700 shadow-none hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
                             Download CV <Download className="ml-2 h-4 w-4" />
                         </Button>
                     </div>
@@ -81,8 +82,8 @@ const Hero = () => {
 
                     {/* Social Icons */}
                     <div className="flex gap-6 text-neutral-400">
-                        <a href="#" className="hover:text-primary hover:-translate-y-1 transition-all"><Github size={24} /></a>
-                        <a href="#" className="hover:text-primary hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
+                        <a href="https://github.com/itscoderprince" target="_blank" className="hover:text-primary hover:-translate-y-1 transition-all"><Github size={24} /></a>
+                        <a href="https://www.linkedin.com/in/prince-sharma-4/" target="_blank" className="hover:text-primary hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
                     </div>
                 </motion.div>
 

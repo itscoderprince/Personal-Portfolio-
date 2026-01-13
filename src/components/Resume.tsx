@@ -67,9 +67,9 @@ const Resume = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={staggerContainer(0.5)}
-          className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-5"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer(0.1)}
+          className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
         >
           {tools.map((tool, i) => (
             <ToolsCard key={i} tool={tool} />

@@ -5,8 +5,23 @@ import { staggerContainer } from '@/lib/animation';
 import SectionHeader from './SectionHeader';
 import { projectsData } from '../constant';
 import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
+import { useState } from 'react';
+import type { ProjectType } from '@/type/index';
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (project: ProjectType) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <motion.section
       initial='hidden'
@@ -31,13 +46,17 @@ const Projects = () => {
         {projectsData.map((project, i) => (
           <ProjectCard
             key={i}
-            imgSrc={project.imgSrc}
-            projectLink={project.projectLink}
-            tags={project.tags}
-            title={project.title}
+            {...project}
+            onClick={() => handleOpenModal(project)}
           />
         ))}
       </motion.div>
+
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </motion.section>
   );
 };

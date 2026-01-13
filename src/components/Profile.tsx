@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+
 import { motion } from "motion/react";
 import { socialLinks } from "../constant";
 import { MapPin } from "lucide-react";
@@ -19,12 +21,12 @@ const Profile = () => {
 
         {/* 1. Avatar (Sized to fit your container) */}
         <div className="relative group w-full flex justify-center">
-          <img
-            src="/Avatar.webp"
+          <Image
+            src="/Avatar.jpg"
             alt="Er Prince MERN Stack Developer"
-            loading="lazy"
-            decoding="async"
-            className="w-full max-w-[18rem] lg:max-w-none aspect-square rounded-full p-1 object-cover bg-neutral-800 border-2 border-neutral-700 group-hover:border-primary transition-all duration-300"
+            width={500}
+            height={500}
+            className="w-full max-w-[18rem] transform scale-x-[-1] lg:max-w-none aspect-square rounded-full p-1 object-cover bg-neutral-800 border-2 border-neutral-700 group-hover:border-primary transition-all duration-300"
           />
         </div>
 
@@ -36,7 +38,7 @@ const Profile = () => {
         </div>
 
         {/* 2. Location & Info */}
-        <div className="w-auto bg-neutral-100 dark:bg-neutral-800/30 rounded-xl p-3 border border-neutral-200 dark:border-neutral-800">
+        <div className="w-auto bg-neutral-100 dark:bg-neutral-800/30 rounded-xl p-2 border border-neutral-200 dark:border-neutral-800">
           <div className="flex items-center justify-center gap-3 text-sm text-neutral-600 dark:text-neutral-300">
             <MapPin className="size-4 text-primary" />
             <span>Delhi, India</span>
@@ -58,7 +60,7 @@ const Profile = () => {
                 key={link.label}
                 target="_blank"
                 rel="noreferrer"
-                className="text-neutral-600 dark:text-neutral-400 hover:text-white hover:bg-black hover:border-black dark:hover:bg-white dark:hover:text-black dark:hover:border-white border border-neutral-200 dark:border-neutral-600 p-2 rounded-full transition-all duration-300"
+                className="text-neutral-600 dark:text-neutral-400 hover:text-white hover:bg-neutral-900 dark:hover:bg-white dark:hover:text-black border border-neutral-200 dark:border-neutral-600 p-2 rounded-full transition-all duration-300"
               >
                 <Icon className="size-5" />
               </a>
