@@ -10,7 +10,7 @@ export const TracingList = ({ children }: { children: React.ReactNode }) => {
             <div className="relative pb-1 pl-6">
                 {/* The static line */}
                 <div className="absolute left-0 top-0 bottom-0 overflow-hidden w-[2px] bg-neutral-200 dark:bg-neutral-800">
-                    {/* The animated meteor */}
+                    {/* The animated meteor fix */}
                     <motion.div
                         initial={{ top: "-10%" }}
                         animate={{ top: "100%" }}
