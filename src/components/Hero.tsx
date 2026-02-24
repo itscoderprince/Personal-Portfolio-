@@ -36,7 +36,7 @@ const Hero = () => {
                     variants={fadeUp}
                     className='text-5xl font-bold tracking-tight sm:text-6xl md:text-6xl lg:text-7xl'
                 >
-                    Hi, I'm <span className='text-primary'>Prince</span>
+                    Hi <span className="inline-block animate-waving-hand">👋🏻</span>, I'm <span className='text-primary'>Prince</span>
                     <br />
                     {/* Flip Text Container */}
                     <span className='block h-auto overflow-hidden text-2xl font-medium text-muted-foreground sm:text-xl md:text-2xl'>
@@ -72,9 +72,11 @@ const Hero = () => {
                             View Projects
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </PrimaryButton>
-                        <Button className="h-11 px-6 text-base flex items-center gap-2 bg-transparent dark:bg-transparent text-neutral-900 dark:text-white border border-neutral-300 dark:border-neutral-700 shadow-none hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
-                            Download CV <Download className="ml-2 h-4 w-4" />
-                        </Button>
+                        <a href="https://drive.google.com/file/d/1-o4A2_tsd16QGc-GxWHxaUQ3hwMIcRom/view" target="_blank" rel="noopener noreferrer">
+                            <Button className="h-11 px-6 text-base flex items-center gap-2 bg-transparent dark:bg-transparent text-neutral-900 dark:text-white border border-neutral-300 dark:border-neutral-700 shadow-none hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
+                                Download CV <Download className="ml-2 h-4 w-4" />
+                            </Button>
+                        </a>
                     </div>
 
                     {/* Social Separator (Hidden on mobile, visible on desktop) */}
