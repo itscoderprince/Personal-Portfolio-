@@ -46,9 +46,9 @@ import {
  */
 const navLinks: LinksType[] = [
     { label: 'Home', link: '/', icon: Home },
-    { label: 'Projects', link: '#projects', icon: Briefcase },
     { label: 'About', link: '#about', icon: User },
     // { label: 'Services', link: '#services', icon: Settings },
+    { label: 'Projects', link: '#projects', icon: Briefcase },
     { label: 'Resume', link: '#resume', icon: FileText },
     { label: 'Reviews', link: '#testimonials', icon: MessageCircle },
     { label: 'Contact', link: '#contact', icon: Mail },
@@ -70,7 +70,7 @@ const socialLinks: LinksType[] = [
  */
 const projectsData: ProjectType[] = [
     {
-        imgSrc: '/images/Ngo.png',
+        imgSrc: 'https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771914825/zwcyzmaudnlswawk3v71_n1xzoq.webp',
         title: 'Prayas by Aarya Foundation Website',
         tags: ['NGO', 'Social Work', 'Web Development'],
         projectLink: 'https://prayasbyaaryafoundation.com/',
@@ -78,7 +78,7 @@ const projectsData: ProjectType[] = [
         features: ['Donation Integration', 'Impact Showcase', 'Member Management', 'Event Gallery'],
     },
     {
-        imgSrc: '/images/kanvei.png',
+        imgSrc: 'https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771914825/hivocvlngf8c2vi18lvb_dtin2z.webp',
         title: 'Kanvei E-commerce Platform',
         tags: ['E-commerce', 'Fashion', 'Web Development'],
         projectLink: 'https://kanvei.in/',
@@ -86,7 +86,7 @@ const projectsData: ProjectType[] = [
         features: ['Product Filtering', 'Secure Checkout', 'User Accounts', 'Order Tracking'],
     },
     {
-        imgSrc: '/images/Life-care.PNG',
+        imgSrc: 'https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771914825/h8yzaxj1dakdegqty4rs_upqkmr.webp',
         title: 'Life Care Health Website',
         tags: ['Health', 'Web Development', 'Healthcare'],
         projectLink: 'https://life-care-ashen.vercel.app/',
@@ -94,7 +94,7 @@ const projectsData: ProjectType[] = [
         features: ['Doctor Profiles', 'Appointment Booking', 'Service Overview', 'Health Blog'],
     },
     {
-        imgSrc: '/images/Gym.PNG',
+        imgSrc: 'https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771914825/hasnnhldcm8y4z3hdki5_fed3wk.webp',
         title: 'Gym Management App',
         tags: ['Social', 'Web Development', 'Social Media'],
         projectLink: 'https://gym-with-react-js.vercel.app/',
@@ -102,7 +102,7 @@ const projectsData: ProjectType[] = [
         features: ['Workout Tracker', 'Membership Plans', 'Trainer Dashboard', 'Progress Analytics'],
     },
     {
-        imgSrc: '/images/Pea.png',
+        imgSrc: 'https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771914824/vjcizljmq5ua0jsjavbk_npmuds.webp',
         title: 'Planedge Architect',
         tags: ['Residential', 'Commercial'],
         projectLink: 'https://plan-edge-jade.vercel.app/',
@@ -110,20 +110,12 @@ const projectsData: ProjectType[] = [
         features: ['Residential | Commercial', 'Designing Spaces, Shaping Experiences', 'Thoughtful Space Creation', 'Purposeful Design'],
     },
     {
-        imgSrc: '/images/project-ph-3.jpeg',
-        title: 'Full Stack Social App',
-        tags: ['Social', 'Web Development', 'Social Media'],
-        projectLink: 'https://musify-5al0.onrender.com/',
-        description: 'A modern social media application featuring real-time chat, post sharing, and user interactions.',
-        features: ['Real-time Chat', 'Post Interactions', 'User Profiles', 'Image Sharing'],
-    },
-    {
-        imgSrc: '/images/project-ph-4.jpeg',
-        title: 'Full stack music app',
-        tags: ['Music', 'Web Development'],
-        projectLink: 'https://musify-5al0.onrender.com/',
-        description: 'A feature-rich music streaming application with personalized playlists and high-quality audio playback.',
-        features: ['Music Streaming', 'Playlist Management', 'Artist Discovery', 'Audio Visualizer'],
+        imgSrc: 'https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771918902/Invest_admin_1_yv8rab.webp',
+        title: 'Investment Dashboard',
+        tags: ['Finance', 'Investment', 'Web Development'],
+        projectLink: 'https://fin-track-murex-nine.vercel.app',
+        description: 'A comprehensive investment tracking dashboard that allows users to monitor their financial portfolios and market trends.',
+        features: ['Portfolio Tracking', 'Market Analysis', 'Secure Login', 'Real-time Data'],
     },
 ];
 

@@ -12,7 +12,7 @@ const Stats = () => {
       whileInView='visible'
       viewport={{ once: false, amount: 0.3 }}
       variants={staggerContainer(0.2)}
-      className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-18'
+      className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-14'
       id='stats'
     >
       {statsData.map((stats, i) => (

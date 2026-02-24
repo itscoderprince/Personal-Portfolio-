@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Er. Prince Sharma, a MERN Stack Developer creating modern, fast and scalable web applications for businesses.",
   icons: {
-    icon: "/Avatar.webp",
+    icon: "https://res.cloudinary.com/dfsg5ylsb/image/upload/w_500,h_500,c_fill,r_max/v1771916315/Avatar_rmysea.webp",
   },
   openGraph: {
     title: "Er. Prince Sharma | MERN Stack Developer",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Prince Sharma Portfolio",
     images: [
       {
-        url: "/Avatar.webp", // Fallback to avatar if no dedicated og-image
+        url: "https://res.cloudinary.com/dfsg5ylsb/image/upload/w_1200,h_630,c_fill,r_max/v1771916315/Avatar_rmysea.webp", // Fallback to avatar if no dedicated og-image
         width: 1200,
         height: 630,
         alt: "Er. Prince Sharma",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Er. Prince Sharma | MERN Stack Developer",
     description: "Portfolio of Er. Prince Sharma, a MERN Stack Developer creating modern, fast and scalable web applications.",
-    images: ["/Avatar.webp"], // Fallback
+    images: ["https://res.cloudinary.com/dfsg5ylsb/image/upload/w_1200,h_630,c_fill,r_max/v1771916315/Avatar_rmysea.webp"], // Fallback
   },
 };
 

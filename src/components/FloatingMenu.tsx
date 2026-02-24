@@ -16,16 +16,26 @@ const FloatingMenu = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = navLinks.map(link => link.link.replace('#', ''));
-      const scrollPosition = window.scrollY + 100;
 
-      for (const section of sections.reverse()) {
+      let currentSection = "";
+      let maxTop = -Infinity;
+
+      for (const section of sections) {
         const element = document.getElementById(section);
-        if (element && element.offsetTop <= scrollPosition) {
-          setActiveLink(`#${section}`);
-          break;
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.4 && rect.top > maxTop) {
+            maxTop = rect.top;
+            currentSection = section;
+          }
         }
       }
-      if (window.scrollY < 50) setActiveLink('/');
+
+      if (window.scrollY < 50) {
+        setActiveLink('/');
+      } else if (currentSection) {
+        setActiveLink(`#${currentSection}`);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);

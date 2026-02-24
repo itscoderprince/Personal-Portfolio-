@@ -22,11 +22,11 @@ const Profile = () => {
         {/* 1. Avatar (Sized to fit your container) */}
         <div className="relative group w-full flex justify-center">
           <Image
-            src="/Avatar.jpg"
+            src="https://res.cloudinary.com/dfsg5ylsb/image/upload/v1771916315/Avatar_rmysea.webp"
             alt="Er Prince MERN Stack Developer"
             width={500}
             height={500}
-            className="w-full max-w-[18rem] transform scale-x-[-1] lg:max-w-none aspect-square rounded-full p-1 object-cover bg-neutral-800 border-2 border-neutral-700 group-hover:border-primary transition-all duration-300"
+            className="w-full max-w-[18rem] transform lg:max-w-none aspect-square rounded-full p-1 object-cover bg-neutral-800 border-2 border-neutral-700 group-hover:border-primary transition-all duration-300"
           />
         </div>
 

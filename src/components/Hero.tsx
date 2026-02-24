@@ -56,7 +56,7 @@ const Hero = () => {
                 {/* 3. Description (Text Generate Effect) */}
                 <motion.div variants={fadeUp} className="max-w-3xl mt-4 w-full">
                     <TextGenerateEffect
-                        words="I build accessible, pixel-perfect, and performant web experiences. Currently focused on building comprehensive e-commerce solutions and tools for NGOs."
+                        words="Full Stack Developer crafting accessible, performant, and pixel-perfect digital experiences. Specialized in the MERN stack with a proven track record of delivering scalable solutions across e-commerce, healthcare, and non-profit sectors. Currently building at Webitya."
                         className="text-left text-base md:text-xl font-normal text-neutral-400 leading-relaxed"
                     />
                 </motion.div>
