@@ -1,0 +1,69 @@
+[
+  {
+    "imgSrc": "https://res.cloudinary.com/dfsg5ylsb/image/upload/v1783837442/screencapture-prayasbyaaryafoundation-2026-07-12-11_51_37_pf4ak7.webp",
+    "title": "Prayas by Aarya Foundation Website",
+    "tags": [
+      "NGO",
+      "Social Work",
+      "Web Development"
+    ],
+    "projectLink": "https://prayasbyaaryafoundation.com/",
+    "description": "A dedicated platform for a non-profit organization to showcase their social initiatives and facilitate donations.",
+    "features": [
+      "Donation Integration",
+      "Impact Showcase",
+      "Member Management",
+      "Event Gallery"
+    ]
+  },
+  {
+    "imgSrc": "/images/uploads/lifecare.svg",
+    "title": "Life Care Health Website",
+    "tags": [
+      "Health",
+      "Web Development",
+      "Healthcare"
+    ],
+    "projectLink": "https://life-care-ashen.vercel.app/",
+    "description": "A comprehensive healthcare service website providing information about medical facilities and appointment booking.",
+    "features": [
+      "Doctor Profiles",
+      "Appointment Booking",
+      "Service Overview",
+      "Health Blog"
+    ]
+  },
+  {
+    "imgSrc": "https://res.cloudinary.com/dfsg5ylsb/image/upload/v1783837727/screencapture-plan-edge-jade-vercel-app-2026-07-12-11_55_49_ydu1tz.webp",
+    "title": "Planedge Architect",
+    "tags": [
+      "Residential",
+      "Commercial"
+    ],
+    "projectLink": "https://plan-edge-jade.vercel.app/",
+    "description": "Planedge Architect creates thoughtful spaces where design meets purpose and everyday living becomes extraordinary.",
+    "features": [
+      "Residential | Commercial",
+      "Designing Spaces, Shaping Experiences",
+      "Thoughtful Space Creation",
+      "Purposeful Design"
+    ]
+  },
+  {
+    "imgSrc": "https://res.cloudinary.com/dfsg5ylsb/image/upload/v1783838174/screencapture-smc-investment-vercel-app-2026-07-12-12_02_34_iingx1.webp",
+    "title": "Investment Dashboard",
+    "tags": [
+      "Finance",
+      "Investment",
+      "Web Development"
+    ],
+    "projectLink": "https://fin-track-murex-nine.vercel.app",
+    "description": "A comprehensive investment tracking dashboard that allows users to monitor their financial portfolios and market trends.",
+    "features": [
+      "Portfolio Tracking",
+      "Market Analysis",
+      "Secure Login",
+      "Real-time Data"
+    ]
+  }
+]

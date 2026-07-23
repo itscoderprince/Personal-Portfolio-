@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06101e" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <path d="M0 180 H1280 M0 360 H1280 M0 540 H1280 M320 0 V720 M640 0 V720 M960 0 V720" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Top App Header Mock -->
+  <rect x="60" y="50" width="1160" height="60" rx="12" fill="#0f172a" fill-opacity="0.8" filter="url(#shadow)"/>
+  <circle cx="100" cy="80" r="8" fill="#ef4444"/>
+  <circle cx="125" cy="80" r="8" fill="#f59e0b"/>
+  <circle cx="150" cy="80" r="8" fill="#10b981"/>
+  <rect x="200" y="68" width="400" height="24" rx="6" fill="#1e293b"/>
+  <text x="215" y="84" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">https://app.portfolio.dev/lifecarehealthwebsite</text>
+
+  <!-- Main Hero Card -->
+  <rect x="60" y="140" width="1160" height="520" rx="20" fill="#0f172a" fill-opacity="0.7" stroke="#334155" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Decorative Accents -->
+  <rect x="100" y="190" width="180" height="32" rx="16" fill="url(#card)"/>
+  <text x="120" y="211" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="1">HEALTHCARE</text>
+
+  <rect x="295" y="190" width="160" height="32" rx="16" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="315" y="211" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">Web Development</text>
+
+  <!-- Title -->
+  <text x="100" y="290" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#ffffff">Life Care Health Website</text>
+  <text x="100" y="335" font-family="system-ui, sans-serif" font-size="22" fill="#94a3b8">Healthcare service website & medical appointment booking platform</text>
+
+  <!-- UI Mockup Content Cards -->
+  <rect x="100" y="380" width="340" height="220" rx="14" fill="#1e293b" stroke="#334155"/>
+  <rect x="125" y="410" width="120" height="14" rx="4" fill="#0284c7"/>
+  <rect x="125" y="440" width="290" height="10" rx="3" fill="#475569"/>
+  <rect x="125" y="460" width="240" height="10" rx="3" fill="#334155"/>
+  <rect x="125" y="480" width="270" height="10" rx="3" fill="#334155"/>
+  <rect x="125" y="530" width="140" height="36" rx="8" fill="#0284c7"/>
+
+  <rect x="470" y="380" width="340" height="220" rx="14" fill="#1e293b" stroke="#334155"/>
+  <rect x="495" y="410" width="140" height="14" rx="4" fill="#38bdf8"/>
+  <rect x="495" y="440" width="290" height="10" rx="3" fill="#475569"/>
+  <rect x="495" y="460" width="220" height="10" rx="3" fill="#334155"/>
+  <rect x="495" y="480" width="260" height="10" rx="3" fill="#334155"/>
+  <rect x="495" y="530" width="140" height="36" rx="8" fill="#38bdf8"/>
+
+  <rect x="840" y="380" width="340" height="220" rx="14" fill="#1e293b" stroke="#334155"/>
+  <rect x="865" y="410" width="100" height="14" rx="4" fill="#a855f7"/>
+  <rect x="865" y="440" width="290" height="10" rx="3" fill="#475569"/>
+  <rect x="865" y="460" width="250" height="10" rx="3" fill="#334155"/>
+  <rect x="865" y="480" width="230" height="10" rx="3" fill="#334155"/>
+  <rect x="865" y="530" width="140" height="36" rx="8" fill="#a855f7"/>
+</svg>
